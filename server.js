@@ -5,7 +5,7 @@ const db = require('./db')
 const { User } = require('./models')
 const { Show } = require('./models')
 const { Ride } = require('./models')
-const db = require('./db')
+
 const app = express()
 const PORT = process.env.PORT || 3001
 

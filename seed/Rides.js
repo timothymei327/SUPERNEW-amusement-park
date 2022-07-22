@@ -14,7 +14,7 @@ const main = async () => {
     {
       title: 'Superman',
       description: 'Fly through the sky as Superman!',
-      image: 'https://imgur.com/bKP6nk0'
+      image: ' https://i.imgur.com/bKP6nk0.jpeg'
     },
 
     {
