@@ -4,7 +4,7 @@ require('dotenv').config() // Add this line
 let dbUrl =
   process.env.NODE_ENV === 'production'
     ? process.env.MONGODB_URI
-    : 'mongodb+srv://yes:Yes12345@cluster0.rnkbkky.mongodb.net/?retryWrites=true&w=majority/parkDatabase'
+    : 'mongodb://127.0.0.1:27017/parkDatabase'
 
 mongoose
   .connect(dbUrl)
