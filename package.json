@@ -7,5 +7,23 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.19"
   },
-  "scripts": {}
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "supernew-amusement-park",
+  "version": "1.0.0",
+  "main": "query.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timothymei327/SUPERNEW-amusement-park.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timothymei327/SUPERNEW-amusement-park/issues"
+  },
+  "homepage": "https://github.com/timothymei327/SUPERNEW-amusement-park#readme",
+  "description": ""
 }
