@@ -1,11 +1,9 @@
 const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
-const User = require('./models/user')
-const Task = require('./models/task')
-const Show = require('./models/show')
-const { default: Home } = require('./src/components/Home')
-const Ride = require('./models/ride')
+const { User } = require('./models')
+const { Show } = require('./models')
+const { Ride } = require('./models')
 
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -19,7 +17,7 @@ app.app.get('/', (req, res) => {
 })
 app.get('/rides', async (req, res) => {
   const rides = await Ride.find({})
-  res.send(Ride)
+  res.send(rides)
 })
 app.get('/shows', async (req, res) => {
   const shows = await Show.find({})
