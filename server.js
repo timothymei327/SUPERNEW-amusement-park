@@ -8,6 +8,7 @@ const { Ride } = require('./models')
 const app = express()
 const PORT = process.env.PORT || 3001
 
+app.use(express.static(`${__dirname}/client/build`))
 app.use(cors())
 app.use(logger('dev'))
 app.use(express.json())
@@ -23,6 +24,10 @@ app.get('/rides', async (req, res) => {
 app.get('/shows', async (req, res) => {
   const shows = await Show.find({})
   res.send(shows)
+})
+
+app.get('/*', (req, res) => {
+  res.sendFile(`${__dirname}/client/build/index.html`)
 })
 
 app.listen(PORT, () => {

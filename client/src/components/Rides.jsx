@@ -3,11 +3,12 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useEffect } from "react"
 
-const BASE_URL = 'http://localhost:3001'
 
 const Rides = () => {
   let navigate = useNavigate()
-
+  
+  const BASE_URL = 'http://localhost:3001'
+  
   const [ride, setRide] = useState('')
 
   const showRideDetails = (ride) => {
