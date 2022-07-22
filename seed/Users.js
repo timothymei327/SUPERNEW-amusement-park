@@ -1,9 +1,12 @@
 // const db = require('../db')
 // const { User } = require('../models')
 
+const { Ride } = require('../models')
+
 // db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 // const main = async () => {
+let rides = await Ride.find({})
 //   const user = [
 //     {
 //       first_name: 'John',

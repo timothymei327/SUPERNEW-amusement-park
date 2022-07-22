@@ -4,7 +4,7 @@ const logger = require('morgan')
 const { User } = require('./models')
 const { Show } = require('./models')
 const { Ride } = require('./models')
-
+const db = require('./db')
 const app = express()
 const PORT = process.env.PORT || 3001
 
@@ -21,7 +21,7 @@ app.get('/rides', async (req, res) => {
 })
 app.get('/shows', async (req, res) => {
   const shows = await Show.find({})
-  res.send(Show)
+  res.send(shows)
 })
 
 app.listen(PORT, () => {

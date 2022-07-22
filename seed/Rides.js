@@ -7,22 +7,26 @@ const main = async () => {
   const rides = [
     {
       title: 'Batman',
-      description: 'Fly through the night as Batman!'
+      description: 'Fly through the night as Batman!',
+      image: 'https://imgur.com/u7z7IZp'
     },
 
     {
       title: 'Superman',
-      description: 'Fly through the sky as Superman!'
+      description: 'Fly through the sky as Superman!',
+      image: 'https://imgur.com/bKP6nk0'
     },
 
     {
       title: 'Acrophobia',
-      description: 'Test your bravery! Fall over 20 stories!'
+      description: 'Test your bravery! Fall over 20 stories!',
+      image: 'https://imgur.com/WYotClx'
     },
 
     {
       title: 'Goliath',
-      description: 'Can you handle this intense 70 mile-per-hour body-blaster!'
+      description: 'Can you handle this intense 70 mile-per-hour body-blaster!',
+      image: 'https://imgur.com/Lp6yZTt'
     }
   ]
   await Ride.insertMany(rides)
