@@ -12,7 +12,7 @@ app.use(cors())
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-app.app.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('hello world')
 })
 app.get('/rides', async (req, res) => {

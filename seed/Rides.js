@@ -1,5 +1,5 @@
-const db = require('../models')
-const { Rides } = require('../models')
+const db = require('../db')
+const { Ride } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -33,3 +33,4 @@ const run = async () => {
   await main()
   db.close()
 }
+run()
