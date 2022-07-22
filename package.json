@@ -2,6 +2,7 @@
   "dependencies": {
     "chance": "^1.1.8",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.4.6",
     "morgan": "^1.10.0",
@@ -13,7 +14,6 @@
   "name": "supernew-amusement-park",
   "version": "1.0.0",
   "main": "query.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/timothymei327/SUPERNEW-amusement-park.git"
