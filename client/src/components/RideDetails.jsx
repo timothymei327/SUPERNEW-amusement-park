@@ -16,8 +16,8 @@ const RideDetails = (props) => {
   return ride ? (
     <div className="detail">
       <div className="detail-header">
-        <img src={ride.img} alt={ride.title} />
-          <h1>{ride.name}</h1>
+        <img src={ride.image} alt={ride.title} />
+          <h1>{ride.title}</h1>
       </div>
         <p>{ride.description}</p>
         <Link to="/rides">Back to Rides</Link>
