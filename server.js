@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
+const db = require('./db')
 const { User } = require('./models')
 const { Show } = require('./models')
 const { Ride } = require('./models')
@@ -17,7 +18,8 @@ app.get('/', (req, res) => {
 })
 app.get('/rides', async (req, res) => {
   const rides = await Ride.find({})
-  res.send(rides)
+  console.log('in rides route')
+  res.json(rides)
 })
 app.get('/shows', async (req, res) => {
   const shows = await Show.find({})
